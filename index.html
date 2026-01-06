@@ -2,14 +2,27 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>Loop Timer</title>
-
+  <title>Timer Input</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="box" id="out">
-    second 1:95
+  <div class="box">
+    <h2 id="title">Enter Time</h2>
+
+    <div class="inputs">
+      <input type="number" id="h" placeholder="hour" min="0">
+      <input type="number" id="m" placeholder="minute" min="0">
+      <input type="number" id="s" placeholder="second" min="0">
+    </div>
+
+
+
+    <button id="start">Start</button>
+<button id="reset">Reset</button>
+    <div class="display" id="out">
+      Time 00:00:00
+    </div>
   </div>
 
   <script src="script.js"></script>
